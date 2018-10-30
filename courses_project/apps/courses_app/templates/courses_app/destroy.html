@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destroy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+</head>
+<body>
+    <h3>Are you sure you want to delete the following course?</h3>
+    <p>Name: {{ course.course_name }}</p>
+    <p>Description: {{ course.desc }}</p>
+    <p>ID number: {{ course.id }}</p>
+    <a href="/">No</a> | <a href="/destroy/{{ course.id }}/delete">Yes! I want to delete this</a>
+</body>
+</html> 
+
+
